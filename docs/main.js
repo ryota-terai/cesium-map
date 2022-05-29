@@ -12,9 +12,12 @@
     //   viewer.scene.primitives.add(Cesium.createOsmBuildings());
     viewer.scene.primitives.add(
         new Cesium.Cesium3DTileset({
-            url: Cesium.IonResource.fromAssetId(1068997),
+            url: Cesium.IonResource.fromAssetId(1068996)
         })
     );
+    // var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({ 
+    //     url : 'http://localhost:8003/tilesets/pointCloud/tileset.json’ 
+    //       })); 
 
     //初期の視点（カメラ）の位置 日本の上空にカメラが来るように設定。
     viewer.camera.setView({
