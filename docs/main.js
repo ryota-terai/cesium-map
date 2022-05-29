@@ -9,16 +9,16 @@
             })
         }
     );
-      viewer.scene.primitives.add(Cesium.createOsmBuildings());
-    // viewer.scene.primitives.add(
-    //     new Cesium.Cesium3DTileset({
-    //         url: Cesium.IonResource.fromAssetId(1068483),
-    //     })
-    // );
+    //   viewer.scene.primitives.add(Cesium.createOsmBuildings());
+    viewer.scene.primitives.add(
+        new Cesium.Cesium3DTileset({
+            url: Cesium.IonResource.fromAssetId(1068997),
+        })
+    );
 
     //初期の視点（カメラ）の位置 日本の上空にカメラが来るように設定。
     viewer.camera.setView({
-        destination: Cesium.Cartesian3.fromDegrees(138, 29, 4000000),
+        destination: Cesium.Cartesian3.fromDegrees(138, 35, 1000000),
         orientation: {
             heading: 0, // 水平方向の回転度（ラジアン）
             pitch: -1.4, // 垂直方向の回転度（ラジアン） 上を見上げたり下を見下ろしたり
